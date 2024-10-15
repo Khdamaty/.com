@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Monica</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    
+    <link rel="stylesheet" href="css/vendorss.css">
+    <link rel="stylesheet" href="css/stylesss.css">
+    
+    
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<style>
+    /* تنسيق أيقونة الواتساب */
+    .whatsapp-icon {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        background-color: #25D366;
+        color: #fff;
+        border-radius: 50%;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        text-decoration: none;
+        transition: transform 0.3s;
+    }
+    
+    .whatsapp-icon i {
+        font-size: 30px;
+    }
+    
+    .whatsapp-icon:hover {
+        transform: scale(1.1);
+    }
+    
+    /* تنسيق أيقونة الاتصال */
+    .call-icon {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        background-color: #007BFF;
+        color: #fff;
+        border-radius: 50%;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        text-decoration: none;
+        transition: transform 0.3s;
+    }
+    
+    .call-icon i {
+        font-size: 30px;
+    }
+    
+    .call-icon:hover {
+        transform: scale(1.1);
+    }
+    
+    /* استعلامات الوسائط لتحسين عرض الأيقونات على الشاشات الصغيرة */
+    @media (max-width: 767px) {
+        .whatsapp-icon,
+        .call-icon {
+            width: 50px;
+            height: 50px;
+            bottom: 15px;
+        }
+    
+        .whatsapp-icon i,
+        .call-icon i {
+            font-size: 25px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .whatsapp-icon,
+        .call-icon {
+            width: 40px;
+            height: 40px;
+            bottom: 10px;
+        }
+    
+        .whatsapp-icon i,
+        .call-icon i {
+            font-size: 20px;
+        }
+    }
+    
+    </style>
+    
+    <a href="https://wa.me/+2001065394376" class="whatsapp-icon" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    
+        <!-- أيقونة الاتصال -->
+        <a href="tel:+2001065394376" class="call-icon" target="_blank">
+            <i class="fas fa-phone"></i>
+        </a>
+    
+
+
+
+<body id="top">
+
+    
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap ss-home">
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="row s-header__inner width-sixteen-col">
+
+                <div class="s-header__block">
+                    <div class="s-header__logo">
+                        <a class="logo" href="index.html">
+                            <img style="width: 159px;
+                            height: 167px;
+                            margin-right: 0px;
+                            margin-left: -18px;" src="images/logoo.png" alt="Homepage">
+                        </a>
+                    </div>
+
+                    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+                </div> <!-- end s-header__block -->
+
+                <nav class="s-header__nav">
+    
+                    <ul class="s-header__menu-links">
+                        
+                        <li class="current"><a href="websites.html">خدمة إنشاء المواقع</a></li>
+                        <li><a href="ads.html">خدمة إنشاء إعلانات جوجل</a></li>   
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                        <li><a href="blog.html">المقالات</a></li>
+                    </ul> <!-- s-header__menu-links -->
+
+                    <div class="s-header__contact">
+                        <a href="contact.html" class="btn btn--primary s-header__contact-btn">Let's Work Together</a>                        
+                    </div> <!-- s-header__contact -->
+    
+                </nav> <!-- end s-header__nav -->
+
+            </div> <!-- end s-header__inner -->
+
+        </header> <!-- end s-header -->
+
+
+        <!-- # site main content
+        ================================================== -->
+        <section id="content" class="s-content">
+
+            <!-- intro
+----------------------------------------------- -->
+<section id="intro" class="s-intro">
+
+    <div class="row s-intro__content width-sixteen-col">
+
+        <div class="column lg-12 s-intro__content-inner grid-block">
+            
+            <div class="s-intro__content-text">
+                <div class="s-intro__content-pretitle text-pretitle">مرحبًا بكم في خدماتي</div>
+                <h1 class="s-intro__content-title">
+                نحن نصنع مواقع إلكترونية <br>
+                مبتكرة ومخصصة لنجاح <br>
+                أعمالكم عبر الإنترنت.
+                </h1>
+            </div> <!-- s-intro__content-text -->
+
+            <div class="s-intro__content-media"> 
+                <div class="s-intro__content-media-inner">                               
+                    <img src="images/freepik-export-202409201429340nib.jpeg"  alt="خدمات إنشاء المواقع">
+                    <div class="lines">                               
+                        <span></span>                                  
+                    </div>
+                </div>
+            </div> <!-- s-intro__content-media -->                      
+
+            <div class="s-intro__scroll-down">
+                <a href="#about" class="smoothscroll">
+                    <div class="scroll-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#97b34a" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="7 13 12 18 17 13"></polyline>
+                            <line x1="12" y1="18" x2="12" y2="6"></line>
+                        </svg>
+                    </div>
+                    <span>تصفح المزيد</span>
+                </a>
+            </div> <!-- s-intro__scroll-down -->
+            
+        </div> <!-- s-intro__content-inner -->
+
+    </div> <!-- s-intro__content -->
+
+</section> <!-- end s-intro -->
+<!-- about
+----------------------------------------------- -->
+<section id="about" class="s-about target-section">
+
+    <div class="row s-about__content width-sixteen-col">
+        <div class="column grid-block grid-section-split">
+
+            <img src="images/geometric_shape.svg" alt="" class="s-about__content-imgbg">
+
+            <div class="section-header grid-section-split__header">
+                <div class="text-pretitle">من نحن</div>                           
+                <h2 class="text-display-title">
+                نحن خبراء في تصميم وتطوير المواقع الإلكترونية.
+                </h2>                           
+            </div> <!-- end section-header -->
+
+            <div class="s-about__content-main grid-section-split__primary">
+                <p class="attention-getter">
+                في شركة خدماتي، نقدم حلولاً مبتكرة لتصميم وتطوير المواقع الإلكترونية تناسب احتياجات عملك. نحن نفهم أهمية وجود موقع ويب قوي يعكس هوية علامتك التجارية ويجذب الزوار.
+                </p>
+
+                <p class="attention-getter">
+                فريقنا من المطورين والمصممين المتميزين يعملون على ضمان أن يكون موقعك سهل الاستخدام وسريع الاستجابة، مما يساعد في تحقيق أهدافك التجارية. نحن نستخدم أحدث التقنيات لتحقيق تجربة مستخدم استثنائية.
+                </p>
+
+                <p class="attention-getter">
+                التزامنا بتقديم الجودة والابتكار يضمن لك الحصول على موقع إلكتروني ليس فقط جميلاً، ولكن أيضاً فعالاً من حيث محركات البحث، مما يساعدك في الوصول إلى جمهورك المستهدف بشكل أفضل.
+                </p>
+            </div> <!-- end s-about__content-main -->
+
+        </div> <!-- end column -->
+    </div> <!-- end row -->
+
+</section> <!-- end s-about -->
+<!-- expertise
+----------------------------------------------- -->
+<section id="expertise" class="s-expertise">
+
+    <div class="row s-expertise__content width-sixteen-col">
+        <div class="column xl-12 grid-block grid-section-split">
+
+            <div class="section-header grid-section-split__header">
+                <div class="text-pretitle">المجالات الرئيسية</div>                           
+                <h2 class="text-display-title">
+                مجالات خبرتي الأساسية.
+                </h2>     
+                
+                <p class="lead">
+                في شركة خدماتي، نتميز بتقديم مجموعة من الخدمات المتكاملة التي تلبي احتياجات عملائنا في عالم التسويق الرقمي وتطوير المواقع الإلكترونية.
+                </p>
+            </div> <!-- end section-header -->
+
+            <div class="s-expertise__content-main grid-section-split__primary">
+
+                <div class="grid-list-items list-items show-ctr">
+                    <div class="grid-list-items__item list-items__item">
+                        <div class="grid-list-items__title list-items__item-header">
+                            <h3 class="list-items__item-title">التسويق الرقمي</h3>
+                        </div>
+                        <div class="grid-list-items__text list-items__item-text">
+                            <p>
+                            نقدم استراتيجيات تسويق رقمي مبتكرة تعزز من وجود علامتك التجارية على الإنترنت، مما يساعدك في جذب العملاء وزيادة المبيعات.
+                            </p>
+                        </div>
+                    </div> <!-- list-item -->
+                    <div class="grid-list-items__item list-items__item">
+                        <div class="grid-list-items__title list-items__item-header">
+                            <h3 class="list-items__item-title">إدارة المشاريع</h3>
+                        </div>
+                        <div class="grid-list-items__text list-items__item-text">
+                            <p>
+                            نتولى إدارة جميع جوانب مشاريعك من التخطيط إلى التنفيذ، مما يضمن تحقيق الأهداف في الوقت المحدد وبأعلى جودة ممكنة.
+                            </p>
+                        </div>
+                    </div> <!-- list-expertise__item -->
+                    <div class="grid-list-items__item list-items__item">
+                        <div class="grid-list-items__title list-items__item-header">
+                            <h3 class="list-items__item-title">تسويق المحتوى</h3>
+                        </div>
+                        <div class="grid-list-items__text list-items__item-text">
+                            <p>
+                            نساعدك في إنشاء محتوى ملهم وجذاب يحقق نتائج ملموسة، ويعزز من تفاعل الجمهور مع علامتك التجارية.
+                            </p>
+                        </div>
+                    </div> <!-- list-expertise__item -->
+                    <div class="grid-list-items__item list-items__item">
+                        <div class="grid-list-items__title list-items__item-header">
+                            <h3 class="list-items__item-title">البحث والاكتشاف</h3>
+                        </div>
+                        <div class="grid-list-items__text list-items__item-text">
+                            <p>
+                            نقوم بإجراء أبحاث دقيقة لفهم السوق واحتياجات العملاء، مما يساعدنا في تطوير حلول مبتكرة تلبي توقعاتك.
+                            </p>
+                        </div>
+                    </div> <!-- list-expertise__item -->
+
+                </div> <!-- grid-list-items -->
+            </div> <!-- end s-expertise__content-main -->
+
+            <div class="s-expertise__content-btn grid-section-split__bottom">
+                <a href="services.html" class="btn btn--stroke u-fullwidth">استعرض جميع الخدمات</a>
+            </div> <!-- end s-about__content-btn -->
+
+        </div> <!-- end grid-block-->
+    </div> <!-- end s-expertise__content -->
+
+</section> <!-- end s-expertise -->
+            <!-- clients
+----------------------------------------------- -->
+<section id="clients" class="s-clients">          
+
+    <div class="row s-clients__content-block width-sixteen-col">
+        <div class="column xl-12 grid-block grid-section-split">
+        
+            <div class="section-header grid-section-split__header">
+                <div class="text-pretitle">العملاء</div>                           
+                <h2 class="text-display-title">
+                لقد كان لي الشرف في العمل مع هذه العلامات التجارية الرائعة.
+                </h2>       
+            </div> <!-- end section-header -->
+        
+            <div class="grid-section-split__primary">
+                <p class="lead">
+                نحن في شركة خدماتي نعتز بشراكتنا مع مجموعة متنوعة من العملاء المتميزين. 
+                </p>   
+
+                <p>
+                لقد قمنا بتقديم حلول مخصصة لكل عميل من عملائنا، بدءًا من إنشاء المواقع الإلكترونية وصولاً إلى استراتيجيات التسويق الرقمي. 
+                تفخر خدماتي بالعمل مع علامات تجارية رائدة ومبتكرة تسعى لتحقيق النجاح في عالم الأعمال.
+                </p>
+            </div> <!-- end grid-section-split__primary -->
+        
+        </div> <!-- end column -->
+    </div> <!-- end row -->
+
+    <div class="row s-clients__content-block width-sixteen-col">
+        <div class="column xl-12">
+        
+            <div class="clients-list">                            
+                <div class="clients-list__item">
+                    <a href="#0">
+                        <img src="images/clients/flash.svg" alt="Flash">
+                    </a>
+                </div>
+                <div class="clients-list__item">
+                    <a href="#0">
+                        <img src="images/clients/rise.svg" alt="Rise">
+                    </a>
+                </div>
+                <div class="clients-list__item">
+                    <a href="#0">
+                        <img src="images/clients/cactus.svg" alt="Cactus">
+                    </a>
+                </div>
+                <div class="clients-list__item">
+                    <a href="#0">
+                        <img src="images/clients/pinpoint.svg" alt="Pinpoint">
+                    </a>
+                </div>
+                <div class="clients-list__item">
+                    <a href="#0">
+                        <img src="images/clients/proline.svg" alt="Proline">
+                    </a>
+                </div>
+                <div class="clients-list__item">
+                    <a href="#0">
+                        <img src="images/clients/vision.svg" alt="Vision">
+                    </a>
+                </div>
+                <div class="column clients-list__item">
+                    <a href="#0">
+                        <img src="images/clients/volume.svg" alt="Volume">
+                    </a>
+                </div>
+                <div class="column clients-list__item">
+                    <a href="#0">
+                        <img src="images/clients/hitech.svg" alt="HiTech">
+                    </a>
+                </div>
+                <div class="clients-list__item">
+                    <a href="#0">
+                        <img src="images/clients/terra.svg" alt="Terra">
+                    </a>
+                </div>
+                <div class="clients-list__item">
+                    <a href="#0">
+                        <img src="images/clients/chain.svg" alt="Chain">
+                    </a>
+                </div>
+            </div> <!-- end clients-list -->
+        </div> <!-- end column -->
+    </div> <!-- end row -->
+
+</section> <!-- end s-clients -->
+
+<!-- # journal
+        ================================================== -->
+        <section id="journal" class="s-journal">
+
+            <div class="row s-journal__content width-sixteen-col">
+                <div class="column xl-12 grid-block">
+        
+                    <div class="grid-full section-header text-center">
+                        <div class="text-pretitle">خدماتي لإنشاء المواقع الإلكترونية</div>
+                        <h2 class="text-display-title">
+                            نقدم لك الحلول المثلى لبناء موقعك الإلكتروني.
+                        </h2>
+                    </div> <!-- end section-header -->
+        
+                    <div class="grid-full s-journal__content-main grid-list-items">
+        
+                        <div class="grid-list-items__item blog-card">
+                            <div class="blog-card__header">
+                                <h3 class="blog-card__title">لماذا تختار خدماتي لإنشاء موقعك؟</h3>
+                            </div>
+                            <div class="blog-card__text">
+                                <p>
+                                    في "خدماتي"، نحن ملتزمون بتقديم حلول مبتكرة تلبي احتياجاتك الفريدة. سواء كنت شركة ناشئة أو مؤسسة كبيرة، نقدم لك خدمة تصميم مواقع إلكترونية مخصصة تساعدك في تعزيز حضورك الرقمي.
+                                </p>
+                            </div>
+                        </div> <!-- end blog-card -->
+        
+                        <div class="grid-list-items__item blog-card">
+                            <div class="blog-card__header">
+                                <h3 class="blog-card__title">خطوات إنشاء موقعك معنا</h3>
+                            </div>
+                            <div class="blog-card__text">
+                                <p>
+                                    **1. اختيار اسم الدومين:** نساعدك في اختيار اسم دومين يتناسب مع هويتك التجارية.
+                                    <br>
+                                    **2. استضافة موثوقة:** نقدم لك استضافة سريعة وآمنة تضمن أداءً ممتازًا لموقعك.
+                                    <br>
+                                    **3. التصميم والتطوير:** نصمم لك واجهة مستخدم جذابة وسهلة الاستخدام، مع توفير تجربة مميزة لزوارك.
+                                    <br>
+                                    **4. تحسين محركات البحث (SEO):** نحرص على تحسين موقعك ليتوافق مع محركات البحث، مما يسهل الوصول إليك وزيادة الزيارات.
+                                </p>
+                            </div>
+                        </div> <!-- end blog-card -->
+        
+                        <div class="grid-list-items__item blog-card">
+                            <div class="blog-card__header">
+                                <h3 class="blog-card__title">الدعم المستمر</h3>
+                            </div>
+                            <div class="blog-card__text">
+                                <p>
+                                    بعد إطلاق موقعك، نحن هنا لدعمك! نقدم لك خدمات صيانة وتحديثات دورية لضمان استمرارية عمل موقعك بكفاءة عالية.
+                                </p>
+                            </div>
+                        </div> <!-- end blog-card -->
+        
+                        <div class="grid-list-items__item blog-card">
+                            <div class="blog-card__header">
+                                <h3 class="blog-card__title">اتصل بنا اليوم</h3>
+                            </div>
+                            <div class="blog-card__text">
+                                <p>
+                                    لا تتردد في التواصل معنا للحصول على استشارة مجانية. دعنا نساعدك في تحقيق رؤيتك الرقمية وبدء رحلتك في عالم الإنترنت!
+                                </p>
+                            </div>
+                        </div> <!-- end blog-card -->
+        
+                    </div> <!-- end grid-list-items -->
+        
+                </div> <!-- end grid-block-->
+            </div> <!-- end s-journal__content -->
+        
+        </section> <!-- end s-journal -->
+        
+      
+    <footer class="s-footer h-dark-bg" style="color: aliceblue;">
+        <div class="right-vert-line"></div>
+    
+        <div class="row s-footer__main">
+            <div class="column large-6">
+                <div class="section-intro" data-aos="fade-up">
+                    <h3 class="subhead" style="color: aliceblue;">تواصل معنا</h3>
+                    <h1 class="display-1" style="color: aliceblue;">
+                        هل لديك فكرة أو مشروع ترغب في تنفيذه؟ دعنا نحول فكرتك إلى واقع.
+                    </h1>
+                </div>
+                <div class="footer-email-us" >
+                    <a href="mailto:info@khadamaty.com" class="btn btn--primary h-full-width" style="color: aliceblue;">تحدث معنا</a>
+                </div>
+            </div>
+    
+            <div class="column large-5">
+                <div class="footer-contacts">
+                    <div class="footer-contact-block" data-aos="fade-up">
+                        <h5 class="footer-contact-block__header" style="color: aliceblue;">البريد الإلكتروني</h5>
+                        <p class="footer-contact-block__content">
+                            <a href="mailto:info@khadamaty.com"style="color: aliceblue;">info@khadamaty.com</a>
+                        </p>
+                    </div>
+                    <div class="footer-contact-block" data-aos="fade-up">
+                        <h5 class="footer-contact-block__header"style="color: aliceblue;">الهاتف</h5>
+                        <p class="footer-contact-block__content">
+                            <a href="tel:+20123456789"style="color: aliceblue;">+20 123 456 789</a>
+                        </p>
+                    </div>
+                    <div class="footer-contact-block" data-aos="fade-up">
+                        <h5 class="footer-contact-block__header"style="color: aliceblue;">الشبكات الاجتماعية</h5>
+                        <ul class="footer-contact-block__list">
+                            <li><a href="#" style="color: aliceblue;">فيسبوك</a></li>
+                            <li><a href="#" style="color: aliceblue;">تويتر</a></li>
+                            <li><a href="#" style="color: aliceblue;">لينكد إن</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row s-footer__bottom">
+            <div class="column large-full ss-copyright">
+                <span style="color: aliceblue;">© حقوق الطبع والنشر 2024 خدماتي</span>
+            </div>
+    
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="العودة إلى الأعلى" href="#top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+        
+    </footer> <!-- end s-footer -->
+
+
+    </div> <!-- end page-wrap -->
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/pluginsss.js"></script>
+    <script src="js/mainss.js"></script>
+
+
+</body>
+</html>

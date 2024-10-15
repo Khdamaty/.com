@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Ethos</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizrs.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+
+<style>
+    /* تنسيق أيقونة الواتساب */
+    .whatsapp-icon {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        background-color: #25D366;
+        color: #fff;
+        border-radius: 50%;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        text-decoration: none;
+        transition: transform 0.3s;
+    }
+    
+    .whatsapp-icon i {
+        font-size: 30px;
+    }
+    
+    .whatsapp-icon:hover {
+        transform: scale(1.1);
+    }
+    
+    /* تنسيق أيقونة الاتصال */
+    .call-icon {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        background-color: #007BFF;
+        color: #fff;
+        border-radius: 50%;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        text-decoration: none;
+        transition: transform 0.3s;
+    }
+    
+    .call-icon i {
+        font-size: 30px;
+    }
+    
+    .call-icon:hover {
+        transform: scale(1.1);
+    }
+    
+    /* استعلامات الوسائط لتحسين عرض الأيقونات على الشاشات الصغيرة */
+    @media (max-width: 767px) {
+        .whatsapp-icon,
+        .call-icon {
+            width: 50px;
+            height: 50px;
+            bottom: 15px;
+        }
+    
+        .whatsapp-icon i,
+        .call-icon i {
+            font-size: 25px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .whatsapp-icon,
+        .call-icon {
+            width: 40px;
+            height: 40px;
+            bottom: 10px;
+        }
+    
+        .whatsapp-icon i,
+        .call-icon i {
+            font-size: 20px;
+        }
+    }
+    
+    </style>
+    
+    <a href="https://wa.me/+2001065394376" class="whatsapp-icon" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    
+        <!-- أيقونة الاتصال -->
+        <a href="tel:+2001065394376" class="call-icon" target="_blank">
+            <i class="fas fa-phone"></i>
+        </a>
+    
+
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+        <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="s-header__logo">
+            <a href="index.html">
+                <img style="width: 159px;
+                height: 167px;
+                margin-right: 0px;
+                margin-left: -18px;" src="images/logoo.png" alt="Homepage">
+            </a>
+        </div>
+
+        <div class="s-header__content">
+    
+            <nav class="s-header__nav-wrap">
+                <ul class="s-header__nav">
+                    <li style="font-size: 20px;" ><a href="websites.html">خدمة إنشاء المواقع</a></li>
+                    <li style="font-size: 20px;" class="current"><a href="ads.html">خدمة إنشاء إعلانات جوجل</a></li>   
+                    <li style="font-size: 20px;"><a href="contact.html">تواصل معنا</a></li>
+                    <li style="font-size: 20px;"><a href="blog.html">المقالات</a></li>
+                  </ul>
+            </nav> <!-- end s-header__nav-wrap -->
+
+            <a href="mailto:#0" class="btn btn--primary btn--small">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/></svg>
+                Get In Touch
+            </a>
+
+        </div> <!-- end header-content -->
+
+        <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+
+    </header> <!-- end s-header -->
+
+<!-- hero
+================================================== -->
+<section id="hero" class="s-hero target-section" data-parallax="scroll" data-image-src="images\dark-gray-wall-with-wooden-plank-product-background.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+    <div class="row hero-content">
+
+        <div class="column large-full">
+
+            <h1>
+            أهلاً بك في شركة خدماتي، <br>
+            نحن متخصصون في إنشاء المواقع الإلكترونية <br>
+            وإدارة حملات إعلانات جوجل <br>
+            لتحقيق أفضل النتائج لأعمالك.
+            </h1>
+
+            <ul class="hero-social">
+                <li>
+                    <a href="#0" title="Twitter">تويتر</a>
+                </li>
+                <li>
+                    <a href="#0" title="Behance">بيهانس</a>
+                </li>
+                <li>
+                    <a href="#0" title="Dribbble">دريبل</a>
+                </li>
+            </ul> <!-- end hero-social -->
+
+        </div> 
+
+    </div> <!-- end hero-content -->
+
+    <div class="hero-scroll">
+        <a href="#about" class="scroll-link smoothscroll">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 24l-8-9h6v-15h4v15h6z"/></svg>
+        </a>
+    </div> <!-- end hero-scroll -->
+
+</section> <!-- end s-hero -->
+   <!-- about
+    ================================================== -->
+<section id="about" class="s-about target-section">
+
+    <div class="s-about__section s-about__section--profile">
+
+        <div class="right-vert-line"></div>
+
+        <div class="row">
+            <div class="column large-6 medium-8 tab-full">
+
+                <div class="section-intro" data-num="01" data-aos="fade-up">
+                    <h3 class="subhead">إعلانات جوجل</h3>
+                    <h1 class="display-1">أفضل الحلول الإعلانية للوصول إلى عملائك المستهدفين.</h1>
+                </div>
+
+                <div class="profile-pic" data-aos="fade-up">
+                    <img src="images/243468-P41O1C-410.jpg" 
+                         srcset="images/243468-P41O1C-410.jpg 1x, images/243468-P41O1C-410.jpg 2x" alt="Google Ads">
+                </div>
+
+                <h3 data-aos="fade-up">ما هي إعلانات جوجل؟</h3>
+
+                <p data-aos="fade-up">
+                إعلانات جوجل هي منصة الإعلان المدفوعة عبر الإنترنت التي تساعد الشركات في الوصول إلى العملاء المحتملين 
+                بناءً على كلمات البحث والموقع الجغرافي وغيرها من المعايير. 
+                نحن في "خدماتي" نقدم لك خدمات إدارة حملات إعلانات جوجل باحترافية، مع تحليل دقيق لضمان تحقيق أفضل النتائج.
+                </p>
+
+            </div>
+        </div>
+
+    </div> <!-- end s-about__section--profile -->
+
+    <div class="s-about__section">
+
+        <div class="row">
+            <div class="column">
+                <h3 data-aos="fade-up">خصائص إعلانات جوجل</h3>
+            </div>
+        </div>
+
+        <div class="row block-large-1-2 block-900-full work-positions">
+
+            <div class="column" data-aos="fade-up">
+                <div class="position">
+                    <div class="position__header">
+                        <h6>
+                            <span class="position__co">إعلانات البحث</span>
+                            <span class="position__pos">تظهر في نتائج البحث</span>
+                        </h6>
+                    </div>
+
+                    <p>
+                    إعلانات البحث تمكنك من الوصول إلى العملاء عندما يبحثون عن منتجاتك أو خدماتك على جوجل، 
+                    مما يضمن زيادة فرص التحويل إلى عملاء فعليين.
+                    </p>
+                </div>
+            </div> <!-- end column -->
+
+            <div class="column" data-aos="fade-up">
+                <div class="position">
+                    <div class="position__header">
+                        <h6>
+                            <span class="position__co">إعلانات الفيديو</span>
+                            <span class="position__pos">إعلانات يوتيوب</span>
+                        </h6>
+                    </div>
+
+                    <p>
+                    نحن نساعدك في إنشاء وإدارة حملات إعلانات الفيديو على يوتيوب لجذب الانتباه ورفع الوعي بمنتجاتك وخدماتك 
+                    عبر محتوى جذاب.
+                    </p>
+                </div>
+            </div> <!-- end column -->
+
+            <div class="column" data-aos="fade-up">
+                <div class="position">
+                    <div class="position__header">
+                        <h6>
+                            <span class="position__co">إعلانات الشبكة الإعلانية</span>
+                            <span class="position__pos">توسيع الوصول</span>
+                        </h6>
+                    </div>
+
+                    <p>
+                    نساعدك في الوصول إلى جمهور أكبر عبر إعلانات الشبكة الإعلانية لجوجل، التي تظهر على مواقع الويب والشبكات 
+                    الشريكة مع جوجل.
+                    </p>
+                </div>
+            </div> <!-- end column -->
+
+            <div class="column" data-aos="fade-up">
+                <div class="position">
+                    <div class="position__header">
+                        <h6>
+                            <span class="position__co">إعلانات التسوق</span>
+                            <span class="position__pos">للتجارة الإلكترونية</span>
+                        </h6>
+                    </div>
+
+                    <p>
+                    نقدم لك خدمات إدارة إعلانات التسوق لجوجل التي تعرض منتجاتك في نتائج البحث، مما يزيد من فرص الشراء 
+                    المباشر من متجرك الإلكتروني.
+                    </p>
+                </div>
+            </div> <!-- end column -->
+
+        </div> <!-- work positions -->
+
+    </div> <!-- end s-about__section -->
+
+</section> <!-- end s-about -->
+<!-- services
+    ================================================== -->
+    <section id="services" class="s-services target-section h-dark-bg">
+    
+        <div class="row s-services__content">
+    
+            <div class="vert-line"></div>
+    
+            <div class="column large-6 s-services__leftcol">
+                <div class="section-intro" data-num="02" data-aos="fade-up">
+                    <h3 class="subhead">خدماتنا</h3>
+    
+                    <h1 class="display-1">
+                    نقدم حلولاً إبداعية في التسويق الإلكتروني وإعلانات جوجل لتعزيز ظهور أعمالك.
+                    </h1>
+                </div>
+    
+                <p class="lead" data-aos="fade-up">
+                في "خدماتي"، نركز على تقديم خدمات إعلانات جوجل، تطوير المواقع الإلكترونية، وتصميم استراتيجيات متكاملة للتسويق الرقمي تساعدك على تحقيق أهداف عملك عبر الإنترنت. 
+                سواء كنت تبحث عن توسيع نطاق جمهورك أو زيادة التحويلات، نحن هنا لنساعدك على النجاح.
+                </p>
+            </div> <!-- end s-services__leftcol -->
+    
+            <div class="column large-6">
+                <ul class="services-list" data-aos="fade-up">
+                    <li class="services-list__item is-active">
+                        <div class="services-list__item-header">
+                            <h5>إعلانات جوجل</h5>
+                        </div>
+                        <div class="services-list__item-body">
+                            <p>
+                            نساعدك في إنشاء وإدارة حملات إعلانات جوجل باحترافية لضمان الوصول الأمثل إلى جمهورك المستهدف وتحقيق أفضل النتائج الممكنة من ميزانية الإعلانات.
+                            </p>
+                        </div>
+                    </li> <!-- services-list__item -->
+                    
+                    <li class="services-list__item">
+                        <div class="services-list__item-header">
+                            <h5>تصميم وتطوير المواقع الإلكترونية</h5>
+                        </div>
+                        <div class="services-list__item-body">
+                            <p>
+                            نوفر لك خدمات تصميم مواقع إلكترونية احترافية متجاوبة مع جميع الأجهزة، تركز على تحسين تجربة المستخدم وجعل موقعك أداة قوية لتنمية أعمالك.
+                            </p>
+                        </div>
+                    </li> <!-- services-list__item -->
+                    
+                    <li class="services-list__item">
+                        <div class="services-list__item-header">
+                            <h5>تحسين محركات البحث (SEO)</h5>
+                        </div>
+                        <div class="services-list__item-body">
+                            <p>
+                            خدماتنا تشمل تحسين محركات البحث لضمان ظهور موقعك في مقدمة نتائج البحث وزيادة عدد الزوار بشكل طبيعي.
+                            </p>
+                        </div>
+                    </li> <!-- services-list__item -->
+                    
+                    <li class="services-list__item">
+                        <div class="services-list__item-header">
+                            <h5>إعلانات الفيديو على يوتيوب</h5>
+                        </div>
+                        <div class="services-list__item-body">
+                            <p>
+                            نوفر لك حملات إعلانية مخصصة على منصة يوتيوب لزيادة الوعي بعلامتك التجارية من خلال محتوى فيديو جذاب.
+                            </p>
+                        </div>
+                    </li> <!-- services-list__item -->
+                    
+                    <li class="services-list__item">
+                        <div class="services-list__item-header">
+                            <h5>إعلانات الشبكة الإعلانية</h5>
+                        </div>
+                        <div class="services-list__item-body">
+                            <p>
+                            نساعدك في الوصول إلى جمهور أوسع باستخدام إعلانات الشبكة الإعلانية لجوجل، التي تظهر على مواقع الويب الشريكة.
+                            </p>
+                        </div>
+                    </li> <!-- services-list__item -->
+                    
+                    <li class="services-list__item">
+                        <div class="services-list__item-header">
+                            <h5>إعلانات التسوق</h5>
+                        </div>
+                        <div class="services-list__item-body">
+                            <p>
+                            نقدم حلول إعلانات التسوق لجوجل التي تساعد في زيادة مبيعات متجرك الإلكتروني من خلال عرض منتجاتك في نتائج البحث بطريقة مباشرة.
+                            </p>
+                        </div>
+                    </li> <!-- services-list__item -->
+                </ul> <!-- end services-list -->
+            </div>
+    
+        </div> <!-- s-services__content -->
+    
+    </section> <!-- end s-services -->
+    
+
+    <!-- portfolio
+    ================================================== -->
+    <section id="portfolio" class="s-portfolio target-section">
+
+        <div class="row s-portfolio__header">
+            <div class="column large-6 medium-8 tab-full">
+                <div class="section-intro" data-num="03" data-aos="fade-up">
+                    <h3 class="subhead">Portfolio</h3>
+                    <h1 class="display-1">
+                        A selection of recent projects I have worked on.
+                    </h1>
+                </div>
+            </div>
+        </div> <!-- s-porfolio__header -->
+        <section id="portfolio" class="s-portfolio target-section">
+
+            <div class="row s-portfolio__header">
+                <div class="column large-6 medium-8 tab-full">
+                    <div class="section-intro" data-num="03" data-aos="fade-up">
+                        <h3 class="subhead">أعمالنا</h3>
+                        <h1 class="display-1">
+                            مجموعة من المشاريع التي عملنا عليها مؤخراً.
+                        </h1>
+                    </div>
+                </div>
+            </div> <!-- s-portfolio__header -->
+        
+            <div class="row s-porfolio__list block-large-1-2 block-tab-full collapse">
+        
+                <!-- مشروع 1 -->
+                <div class="column" data-aos="fade-up">
+                    <div class="folio-item">
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-windows-in-the-city.jpg" title="نوافذ في المدينة" data-size="1050x700">
+                                <img src="images/portfolio/windows-in-the-city.jpg" 
+                                     srcset="images/portfolio/windows-in-the-city.jpg 1x, images/portfolio/windows-in-the-city@2x.jpg 2x" alt="نوافذ في المدينة">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">تصميم العلامة التجارية</div>
+                            <h4 class="folio-item__title">نوافذ في المدينة</h4>
+                        </div>
+                        <a href="https://www.behance.net/" title="رابط المشروع" class="folio-item__project-link">رابط المشروع</a>
+                        <div class="folio-item__caption">
+                            <p>قمنا بتطوير واجهة حديثة لمشروع يعتمد على التصميم الإبداعي، مع ضمان تجربة مستخدم ممتازة وسهولة التصفح.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+        
+                <!-- مشروع 2 -->
+                <div class="column" data-aos="fade-up">
+                    <div class="folio-item">
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-building-blocks.jpg" title="اللبنات الأساسية" data-size="1050x700">
+                                <img src="images/portfolio/building-blocks.jpg" 
+                                     srcset="images/portfolio/building-blocks.jpg 1x, images/portfolio/building-blocks@2x.jpg 2x" alt="اللبنات الأساسية">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">تصميم الواجهة الأمامية</div>
+                            <h4 class="folio-item__title">اللبنات الأساسية</h4>
+                        </div>
+                        <a href="https://www.behance.net/" title="رابط المشروع" class="folio-item__project-link">رابط المشروع</a>
+                        <div class="folio-item__caption">
+                            <p>هذا المشروع يعتمد على تصميم واجهة مخصصة بالكامل، مع التركيز على الأداء العالي وتجربة المستخدم السلسة.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+        
+                <!-- مشروع 3 -->
+                <div class="column" data-aos="fade-up">
+                    <div class="folio-item">
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-shout-jump.jpg" title="الصراخ والقفز" data-size="1050x700">
+                                <img src="images/portfolio/shout-and-jump.jpg" 
+                                     srcset="images/portfolio/shout-and-jump.jpg 1x, images/portfolio/shout-and-jump@2x.jpg 2x" alt="الصراخ والقفز">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">تصميم العلامة التجارية</div>
+                            <h4 class="folio-item__title">الصراخ والقفز</h4>
+                        </div>
+                        <a href="https://www.behance.net/" title="رابط المشروع" class="folio-item__project-link">رابط المشروع</a>
+                        <div class="folio-item__caption">
+                            <p>تصميم إبداعي يدمج بين الحركة الديناميكية والتفاعل السريع لزيادة جاذبية العلامة التجارية.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+        
+                <!-- مشروع 4 -->
+                <div class="column" data-aos="fade-up">
+                    <div class="folio-item">
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-sand-dunes.jpg" title="الكثبان الرملية" data-size="1050x700">
+                                <img src="images/portfolio/sand-dunes.jpg" 
+                                     srcset="images/portfolio/sand-dunes.jpg 1x, images/portfolio/sand-dunes@2x.jpg 2x" alt="الكثبان الرملية">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">تصميم الواجهة الأمامية</div>
+                            <h4 class="folio-item__title">الكثبان الرملية</h4>
+                        </div>
+                        <a href="https://www.behance.net/" title="رابط المشروع" class="folio-item__project-link">رابط المشروع</a>
+                        <div class="folio-item__caption">
+                            <p>واجهات متجاوبة بشكل كامل مع التركيز على البساطة وجماليات التصميم لمشروع يعتمد على الطبيعة الجذابة.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+        
+                <!-- مشروع 5 -->
+                <div class="column" data-aos="fade-up">
+                    <div class="folio-item">
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-woodcraft.jpg" title="الخشب المصنوع يدويًا" data-size="1050x700">
+                                <img src="images/portfolio/woodcraft.jpg" 
+                                     srcset="images/portfolio/woodcraft.jpg 1x, images/portfolio/woodcraft@2x.jpg 2x" alt="الخشب المصنوع يدويًا">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">تصميم المنتجات</div>
+                            <h4 class="folio-item__title">الخشب المصنوع يدويًا</h4>
+                        </div>
+                        <a href="https://www.behance.net/" title="رابط المشروع" class="folio-item__project-link">رابط المشروع</a>
+                        <div class="folio-item__caption">
+                            <p>تصميم مبتكر لمنتجات خشبية مصنوعة يدويًا، مع الاهتمام بأدق التفاصيل لضمان الجودة.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+        
+                <!-- مشروع 6 -->
+                <div class="column" data-aos="fade-up">
+                    <div class="folio-item">
+                        <div class="folio-item__thumb">
+                            <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-lamp.jpg" title="المصباح" data-size="1050x700">
+                                <img src="images/portfolio/lamp.jpg" 
+                                     srcset="images/portfolio/lamp.jpg 1x, images/portfolio/lamp@2x.jpg 2x" alt="المصباح">
+                            </a>
+                        </div>
+                        <div class="folio-item__info">
+                            <div class="folio-item__cat">تصميم المنتجات</div>
+                            <h4 class="folio-item__title">المصباح</h4>
+                        </div>
+                        <a href="https://www.behance.net/" title="رابط المشروع" class="folio-item__project-link">رابط المشروع</a>
+                        <div class="folio-item__caption">
+                            <p>تصميم فريد لمصباح يدمج بين الجمال والعملية، مصنوع من مواد مستدامة وصديقة للبيئة.</p>
+                        </div>
+                    </div>
+                </div> <!-- end column -->
+        
+            </div> <!-- folio-list -->
+        
+        </section> <!-- end portfolio -->
+</section>        
+
+
+        <!-- CTA
+        ================================================== -->
+        <div class="s-cta">
+            <div class="row">
+                <div class="column large-full">
+                    <h2 class="section-desc" data-aos="fade-up">
+                        هل تحتاج إلى استضافة مواقع موثوقة وفعالة؟
+                    </h2>
+                </div>
+            </div>
+        
+            <div class="row cta-content" data-aos="fade-up">
+                <div class="column large-full">
+                    <p>
+                    نحن نوصي بشدة بـ <a href="#">استضافة مواقعنا</a>، استضافة قوية وموثوقة تبدأ من 99 جنيه شهريًا.
+                    </p>
+                    <a href="https://wa.me/+2001065394376" class="btn btn--primary h-full-width">ابدأ الآن</a>
+                </div>
+            </div>
+        </div>
+        
+
+
+    </section> <!-- end s-testimonials -->
+
+    <footer class="s-footer h-dark-bg">
+        <div class="right-vert-line"></div>
+    
+        <div class="row s-footer__main">
+            <div class="column large-6">
+                <div class="section-intro" data-aos="fade-up">
+                    <h3 class="subhead">تواصل معنا</h3>
+                    <h1 class="display-1">
+                        هل لديك فكرة أو مشروع ترغب في تنفيذه؟ دعنا نحول فكرتك إلى واقع.
+                    </h1>
+                </div>
+                <div class="footer-email-us">
+                    <a href="mailto:info@khadamaty.com" class="btn btn--primary h-full-width">تحدث معنا</a>
+                </div>
+            </div>
+    
+            <div class="column large-5">
+                <div class="footer-contacts">
+                    <div class="footer-contact-block" data-aos="fade-up">
+                        <h5 class="footer-contact-block__header">البريد الإلكتروني</h5>
+                        <p class="footer-contact-block__content">
+                            <a href="mailto:info@khadamaty.com">info@khadamaty.com</a>
+                        </p>
+                    </div>
+                    <div class="footer-contact-block" data-aos="fade-up">
+                        <h5 class="footer-contact-block__header">الهاتف</h5>
+                        <p class="footer-contact-block__content">
+                            <a href="tel:+20123456789">+20 123 456 789</a>
+                        </p>
+                    </div>
+                    <div class="footer-contact-block" data-aos="fade-up">
+                        <h5 class="footer-contact-block__header">الشبكات الاجتماعية</h5>
+                        <ul class="footer-contact-block__list">
+                            <li><a href="#">فيسبوك</a></li>
+                            <li><a href="#">تويتر</a></li>
+                            <li><a href="#">لينكد إن</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row s-footer__bottom">
+            <div class="column large-full ss-copyright">
+                <span>© حقوق الطبع والنشر 2024 خدماتي</span>
+            </div>
+    
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="العودة إلى الأعلى" href="#top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+        <div class="row s-footer__bottom">
+            <div class="column large-full ss-copyright">
+                <span>© Copyright Ethos 2019</span> 
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div> <!-- end ss-copyright -->
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg>
+                </a>
+            </div> <!-- end ss-go-top -->
+        </div> <!-- end s-footer__bottom -->
+
+    </footer> <!-- end s-footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.mins.js"></script>
+    <script src="js/pluginss.js"></script>
+    <script src="js/mains.js"></script>
+
+</body>
