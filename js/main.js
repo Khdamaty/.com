@@ -63,4 +63,23 @@
 
     
 })(jQuery);
-
+/* Google Ads – account e (AW-16976812474) */
+(function () {
+  var ID = 'AW-16976812474';
+  window.dataLayer = window.dataLayer || [];
+  if (typeof window.gtag !== 'function') {
+    window.gtag = function () { window.dataLayer.push(arguments); };
+  }
+  if (!document.querySelector('script[src*="googletagmanager.com/gtag/js?id=' + ID + '"]')) {
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID;
+    document.head.appendChild(s);
+  }
+  if (!window.__eCfg) {
+    window.__eCfg = true;
+    gtag('js', new Date());
+    gtag('config', ID);
+  }
+  gtag('event', 'conversion', { 'send_to': ID + '/OLWNCJ2SjbsaELqzlp8_' });
+})();
